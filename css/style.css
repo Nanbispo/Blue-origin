@@ -14,6 +14,8 @@ header{
 
 nav {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-right: 20px;
 }
 
@@ -29,9 +31,47 @@ li{
     text-decoration: none;
 }
 
-section img{
+.hamburger{
+    display: flex;
+    margin-left: auto;
+}
+
+h2{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;font-family: Barlow;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: white;
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #0033DD;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.planeta {
     width: 100%;
     height: 100%;
 }
 
 
+.banner {
+    position: relative;
+    display: inline-block; /* Faz o contêiner ter o tamanho da imagem */
+    color: white;
+}
