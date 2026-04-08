@@ -13,23 +13,32 @@
     <head>
         <main>
             <header>
-                <nav>
-                    <img src="imgs/logo-blue-origin-tagline-optimized 1.svg" alt="Logo blue Origin">
-                    <ul>
-                        <li> <a href="#">Vehicles</a></li>
-                        <li> <a href="#">System</a></li>
-                        <li> <a href="#">About</a></li>
-                        <li> <a href="#">Carrers</a></li>
-                        <li> <a href="#">Shop</a></li>
+                <nav class="barra_superior">
+                    <img class="blue_origin" src="imgs/logo-blue-origin-tagline-optimized 1.svg" alt="Logo blue Origin">
+                    <ul class="barra_superior_opcoes">
+                        <li class="lista_elemento"> <a href="#">Vehicles</a></li>
+                        <li class="lista_elemento"> <a href="#">System</a></li>
+                        <li class="lista_elemento"> <a href="#">About</a></li>
+                        <li class="lista_elemento"> <a href="#">Carrers</a></li>
+                        <li class="lista_elemento"> <a href="#">Shop</a></li>
+                        <div class="barra_inferior"></div>
                     </ul>
-                    <img src="imgs/hamburger.png" alt="" class="hamburger">
+                        <div class="menu_direita">
+                            <button class="botao_superior">Compre seu Assento</button>
+                            <img src="imgs/hamburger.png" alt="" class="hamburger">
+                        </div>
                 </nav>
             </header>
 
-            <section id="banner">
+            <section class="banner_planeta">
                 <h2>Junte-se a uma nova geração de astronautas.</h2>
-                <button>Descubra Mais</button>
+                <button class="botao_central">Descubra Mais</button>
                 <img src="imgs/Mask group.svg" alt="" class="planeta">
+                <svg xmlns="http://www.w3.org/2000/svg" width="160" height="10" viewBox="0 0 160 10" fill="none">
+                    <rect width="40" height="10" fill="#D9D9D9"/>
+                    <rect x="60" width="40" height="10" fill="#D9D9D9"/>
+                    <rect x="120" width="40" height="10" fill="#D9D9D9"/>
+                    </svg>
             </section>
 
             <section id="conteudo"></section>
@@ -38,6 +47,6 @@
         
         </main>
     </head>
-    
+    <script src="app/app.js"></script>
 </body>
 </html>

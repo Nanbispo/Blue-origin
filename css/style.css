@@ -3,37 +3,83 @@
     font-family: "Barlow", Verdana, Geneva, Tahoma, sans-serif;
     
 }
-main{
-    display: flex;
-    flex-direction: column;
-}
 
-header{
-    background-color: #0033DD;
-}
+
 
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 20px;
+    background-color: #0033DD;
 }
 
-ul a{
-    
-    color: azure;
+.blue_origin {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
 }
 
-li{
-    
+.barra_superior_opcoes{
+    display: flex;
+    position: relative;/*position: relative; /* Essencial para a barra absoluta se guiar por ele */
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.lista_elemento{
     display: inline-block;
-    margin-right: 23px;
-    text-decoration: none;
+    margin-right: 1.438rem;
+    cursor: pointer;
+    padding-left: 60px;
 }
+
+.lista_elemento a {
+text-decoration: none;
+  color: white;
+  font-weight: normal;
+  font-size: 25px;
+  transition: color 0.3s ease;
+
+}
+.barra_inferior {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff; /* Começa com largura 0 para ficar invisível inicialmente */
+    transition: all 0.3s ease-in-out; /* Define a animação suave */
+    pointer-events: none; /* Impede que a barra interfira no hover dos links */
+   
+  }
+
+.menu_direita{
+    display: flex;
+    align-items: center; /* Garante que o botão e o hambúrguer fiquem na mesma altura */
+    gap: 30px; /* Espaço entre o botão e o ícone do hambúrguer */
+    margin-left: auto; /* Esse é o truque! Empurra todo esse grupo para a extrema direita */
+    padding-right: 20px;
+}
+
+.botao_superior{
+    display: inline-block;
+    
+    margin-left: auto;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.2rem;
+    background-color: white;
+    color: #0033DD;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 
 .hamburger{
     display: flex;
     margin-left: auto;
+    padding-right: 20px;
 }
 
 h2{
@@ -51,12 +97,12 @@ h2{
     color: white;
 }
 
-button{
+.botao_central{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px 20px;
+    padding: 0.625rem 1.25rem;
     font-size: 1.2rem;
     background-color: #0033DD;
     color: white;
@@ -74,4 +120,10 @@ button{
     position: relative;
     display: inline-block; /* Faz o contêiner ter o tamanho da imagem */
     color: white;
+}
+
+.botao_central:hover {
+    background-color: white;
+    color: #0033DD;
+    transition: 0.5s;
 }
