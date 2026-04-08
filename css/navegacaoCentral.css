@@ -1,0 +1,46 @@
+.planeta {
+    width: 100%;
+    height: 100%;
+}
+
+.texto_central{
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;font-family: Barlow;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: white;
+}
+
+.botao_central{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.625rem 1.25rem;
+    font-size: 1.2rem;
+    background-color: #0033DD;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.botao_central:hover {
+    background-color: white;
+    color: #0033DD;
+    transition: 0.5s;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 3.125rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+

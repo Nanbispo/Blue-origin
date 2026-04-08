@@ -1,0 +1,75 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0033DD;
+}
+
+.blue_origin {
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.barra_superior_opcoes{
+    display: flex;
+    position: relative;/*position: relative; /* Essencial para a barra absoluta se guiar por ele */
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.lista_elemento{
+    display: inline-block;
+    margin-right: 1.438rem;
+    cursor: pointer;
+    padding-left: 60px;
+}
+
+.lista_elemento a {
+text-decoration: none;
+  color: white;
+  font-weight: normal;
+  font-size: 25px;
+  transition: color 0.3s ease;
+
+}
+.barra_inferior {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0;
+    height: 3px;
+    background-color: #ffffff; /* Começa com largura 0 para ficar invisível inicialmente */
+    transition: all 0.3s ease-in-out; /* Define a animação suave */
+    pointer-events: none; /* Impede que a barra interfira no hover dos links */
+   
+  }
+
+.menu_direita{
+    display: flex;
+    align-items: center; /* Garante que o botão e o hambúrguer fiquem na mesma altura */
+    gap: 1.875rem; /* Espaço entre o botão e o ícone do hambúrguer */
+    margin-left: auto; /* Esse é o truque! Empurra todo esse grupo para a extrema direita */
+    padding-right: 1.25rem;
+}
+
+.botao_superior{
+    display: inline-block;
+    
+    margin-left: auto;
+    padding: 0.625rem 1.25rem;
+    font-size: 1.2rem;
+    background-color: white;
+    color: #0033DD;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.hamburger{
+    display: flex;
+    margin-left: auto;
+    padding-right: 20px;
+}
