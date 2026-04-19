@@ -1,68 +1,22 @@
 .assento_retorno{
-    background-color: #202020;
     display: flex;
-    margin-top: -3.5px;
-    padding: 0;
-    width: 100%;
-    max-width: 100%;
-    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: auto;
+    background: #202020;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .janela{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 29rem;
-    aspect-ratio: 409/230;
-    flex-shrink: 0;
+    padding: 15px 40px 20px 20px;
+    width: 380px;
+    gap: 20px;
 }
-
 
 .foto_janela{
-    width: 50%;
-    aspect-ratio: 409/230;
-    order: 1;
-    object-fit: cover;
+    display: block;
+    width: 834px;
 }
-
-.tipografia{
-   color: #FFF;
-    font-family: Barlow;
-    font-size: 0.75rem;
-    font-style: normal;
-    font-weight: 900;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
-    padding-top: 0;
-    width: 100%;
-}
-
-h2 {
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
-    color: #FFF;
-    font-family: Barlow;
-    font-size: 2.5rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    max-width: 23.125rem;
-    width: 100%;
-}
-
-.desc_retorno {
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
-    padding-top: 0;
-    color: #FFF;
-    font-family: Barlow;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    max-width: 31.25rem;
-    width: 100%;
-}
-
